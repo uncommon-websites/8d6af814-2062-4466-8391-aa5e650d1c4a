@@ -1,55 +1,43 @@
-<script>
-    const logos = [
-        { name: 'Angi', hasCaseStudy: false },
-        { name: 'chime', hasCaseStudy: true, caseStudyText: 'CASE STUDY' },
-        { name: 'Airwallex', hasCaseStudy: false },
-        { name: 'ramp', hasCaseStudy: true, icon: true, caseStudyText: 'CASE STUDY' },
-        { name: 'carta', hasCaseStudy: true, caseStudyText: 'CASE STUDY' },
-        { name: 'upwork', hasCaseStudy: false },
-        { name: 'klaviyo', hasCaseStudy: false },
-        { name: 'Notion', hasCaseStudy: false, icon: true },
-        { name: 'HubSpot', hasCaseStudy: false },
-        { name: 'Hard Rock', hasCaseStudy: false },
-        { name: 'MAGELLAN JETS', hasCaseStudy: false },
-        { name: 'logo_circle', hasCaseStudy: false, isImage: true }, // Placeholder for the black circle logo
-        { name: 'sproutsocial', hasCaseStudy: false, icon: true },
-        { name: 'GONG', hasCaseStudy: false, icon: true },
-        { name: 'Sage', hasCaseStudy: false }
-    ];
-</script>
-
-<section class="py-12 bg-white border-b border-gray-200 font-sans">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-[10px] uppercase tracking-widest text-brand-green font-bold mb-8">
-            JOIN THE BEST BRANDS IN THE WORLD WINNING ON AIROPS
+<section class="py-16 bg-white border-b border-gray-200 font-sans">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-8">
+            AUTONOMOUS POSTING ACROSS YOUR PLATFORMS
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-0 border-t border-l border-gray-200">
-            {#each logos as logo}
-                <div class="flex items-center justify-center p-6 border-r border-b border-gray-200 h-24 relative group">
-                    <!-- Logo Placeholder -->
-                    {#if logo.isImage}
-                        <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-bold text-xs">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg>
-                        </div>
-                    {:else}
-                        <span class="text-xl md:text-2xl font-bold text-gray-400 group-hover:text-gray-900 transition-colors flex items-center gap-2">
-                            {#if logo.icon}
-                            <!-- Generic Icon for some -->
-                            <div class="w-6 h-6 bg-gray-300 rounded-sm"></div>
-                            {/if}
-                            {logo.name}
-                        </span>
-                    {/if}
-
-                    {#if logo.hasCaseStudy}
-                        <a href="#" class="absolute top-2 right-2 text-[8px] font-bold text-pink-600 bg-pink-50 px-1.5 py-0.5 rounded border border-pink-100 hover:bg-pink-100 flex items-center transition-colors">
-                            {logo.caseStudyText} 
-                            <svg class="w-2 h-2 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </a>
-                    {/if}
+        <div class="flex items-center justify-center gap-12 flex-wrap">
+            <!-- LinkedIn -->
+            <div class="flex flex-col items-center gap-3 group">
+                <div class="w-16 h-16 rounded-lg bg-[#0A66C2] flex items-center justify-center transition-transform group-hover:scale-110">
+                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
                 </div>
-            {/each}
+                <span class="text-sm font-medium text-gray-600">LinkedIn</span>
+            </div>
+
+            <!-- X (Twitter) -->
+            <div class="flex flex-col items-center gap-3 group">
+                <div class="w-16 h-16 rounded-lg bg-black flex items-center justify-center transition-transform group-hover:scale-110">
+                    <svg class="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </div>
+                <span class="text-sm font-medium text-gray-600">X (Twitter)</span>
+            </div>
+
+            <!-- More Coming Soon -->
+            <div class="flex flex-col items-center gap-3 group opacity-50">
+                <div class="w-16 h-16 rounded-lg bg-gray-200 flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                    </svg>
+                </div>
+                <span class="text-sm font-medium text-gray-400">More soon</span>
+            </div>
         </div>
+
+        <p class="mt-8 text-sm text-gray-500 max-w-xl mx-auto">
+            V30 optimizes your content for each platform automatically. One message, multiple versions.
+        </p>
     </div>
 </section>

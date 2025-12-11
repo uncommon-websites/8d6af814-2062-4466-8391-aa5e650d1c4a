@@ -12,56 +12,82 @@
         
         <!-- Headline -->
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif-display text-gray-900 leading-[1.1] tracking-tight mb-6 max-w-5xl mx-auto">
-            Craft content <br class="hidden md:block" />
-            that wins 
-            <span class="inline-flex items-center align-middle mx-1 md:mx-2 relative -top-1 md:-top-2">
-                <svg width="60" height="60" viewBox="0 0 100 100" class="w-10 h-10 md:w-16 md:h-16 text-[#2A9D8F] animate-spin-slow" fill="currentColor">
-                    <!-- Stylized Asterisk/Flower -->
-                    <path d="M50 0 L60 35 L95 25 L70 50 L95 75 L60 65 L50 100 L40 65 L5 75 L30 50 L5 25 L40 35 Z" />
-                </svg>
-            </span>
-            search
+            Never write <br class="hidden md:block" />
+            another post
         </h1>
 
         <!-- Subheadline -->
         <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            AirOps powers your content strategy, creation, and performance, helping your brand get seen, cited, and celebrated.
+            V30 transforms social media chaos into consistent growth through autonomous AI agents managing your strategy, creation, and publishing.
         </p>
 
         <!-- CTA -->
-        <div class="mb-16">
-            <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-gray-900 bg-brand-green hover:bg-brand-green-hover transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                Book a Demo
+        <div class="mb-16 flex flex-col sm:flex-row gap-4 items-center">
+            <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-gray-900 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                Start Free Trial
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
+            <p class="text-sm text-gray-500">No credit card required • 3 credits free</p>
         </div>
 
-        <!-- Video Player / Error State Recreation -->
-        <div class="w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl bg-black aspect-video relative group cursor-pointer">
-            <!-- Volume Icon -->
-            <div class="absolute top-6 right-6 z-20 text-gray-400">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+        <!-- Product Dashboard Mockup -->
+        <div class="w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl bg-white border border-gray-200 relative">
+            <!-- Browser Chrome -->
+            <div class="bg-gray-100 border-b border-gray-200 px-4 py-3 flex items-center gap-2">
+                <div class="flex gap-1.5">
+                    <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="bg-white rounded px-4 py-1 text-xs text-gray-600 border border-gray-200">app.v30.ai</div>
+                </div>
             </div>
 
-            <!-- Content -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-                <!-- Play Button Circle -->
-                <div class="w-16 h-16 md:w-20 md:h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition-all">
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-white fill-current ml-1" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                    </svg>
+            <!-- Dashboard Content -->
+            <div class="bg-gradient-to-br from-gray-50 to-white p-8">
+                <!-- Header -->
+                <div class="mb-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-2xl font-serif-display text-gray-900">30-Day Content Calendar</h3>
+                        <p class="text-sm text-gray-500 mt-1">Next 7 days • LinkedIn & X</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="px-3 py-1.5 bg-green-100 text-green-700 rounded-full font-medium">+127 followers</span>
+                        <span class="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-full font-medium">15% growth</span>
+                    </div>
                 </div>
 
-                <!-- Error Message Text (Recreating the screenshot detail) -->
-                <h3 class="text-white text-xl md:text-2xl font-medium mb-2">We couldn't verify the security of your connection.</h3>
-                <p class="text-gray-400 text-sm md:text-base max-w-lg">
-                    Access to this content has been restricted. Contact your internet service provider for help.
-                </p>
-            </div>
-            
-            <!-- Progress Bar (Fake) -->
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gray-800">
-                <div class="h-full w-1/3 bg-brand-green"></div>
+                <!-- Calendar Grid -->
+                <div class="grid grid-cols-7 gap-3">
+                    {#each Array(7) as _, i}
+                    <div class="bg-white rounded-lg border border-gray-200 p-3 hover:shadow-md transition-shadow">
+                        <div class="text-xs font-bold text-gray-400 mb-2">
+                            {['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'][i]}
+                        </div>
+                        <div class="space-y-2">
+                            {#if i < 5}
+                            <div class="bg-blue-50 border border-blue-200 rounded p-2 text-[10px]">
+                                <div class="flex items-center gap-1 mb-1">
+                                    <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    <span class="font-bold text-blue-900">LinkedIn</span>
+                                </div>
+                                <p class="text-gray-700 line-clamp-2">AI agents are changing how...</p>
+                            </div>
+                            {/if}
+                            {#if i % 2 === 0 && i < 6}
+                            <div class="bg-gray-50 border border-gray-200 rounded p-2 text-[10px]">
+                                <div class="flex items-center gap-1 mb-1">
+                                    <svg class="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                    <span class="font-bold text-gray-900">X</span>
+                                </div>
+                                <p class="text-gray-700 line-clamp-2">Just shipped a new feature...</p>
+                            </div>
+                            {/if}
+                        </div>
+                    </div>
+                    {/each}
+                </div>
             </div>
         </div>
     </div>

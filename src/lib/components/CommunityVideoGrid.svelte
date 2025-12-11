@@ -1,11 +1,11 @@
 <section class="py-24 bg-white border-t border-gray-200 font-sans">
     <div class="max-w-7xl mx-auto px-4 text-center mb-16">
-        <span class="text-[10px] font-bold text-gray-500 uppercase tracking-widest border border-gray-200 px-3 py-1.5 rounded-full bg-gray-50">Content Engineering Certification</span>
-        <h2 class="mt-8 text-5xl md:text-6xl font-serif-display text-gray-900">Learning pays off. <br/> Literally.</h2>
-        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Discover the Content Engineering principles that really move the needle for the pros now, and lead the next era of content marketing.</p>
+        <span class="text-[10px] font-bold text-gray-500 uppercase tracking-widest border border-gray-200 px-3 py-1.5 rounded-full bg-gray-50">Join the Community</span>
+        <h2 class="mt-8 text-5xl md:text-6xl font-serif-display text-gray-900">Founders helping <br/> founders grow</h2>
+        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Join hundreds of indie hackers and startup founders sharing strategies, wins, and lessons learned while building in public.</p>
         <div class="mt-8">
             <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded bg-gray-900 text-white hover:bg-gray-800 transition-colors">
-                Learn more about Content Engineering ->
+                Join the V30 Community →
             </a>
         </div>
     </div>
@@ -31,12 +31,12 @@
                 <img src="https://placehold.co/200x200/eee/333?text=User" alt="User" class="w-full h-full object-cover" />
             </div>
             <div class="flex-1 text-center md:text-left">
-                <blockquote class="text-2xl md:text-3xl font-serif-display text-green-600 leading-tight">
-                    "Such a great experience learning from the brightest group of people. Thanks for having me!"
+                <blockquote class="text-2xl md:text-3xl font-serif-display leading-tight" style="color: oklch(0.696 0.17 162.48);">
+                    "The V30 community is gold. Real founders sharing what actually works, no fluff."
                 </blockquote>
                 <div class="mt-4 text-xs font-bold uppercase tracking-widest text-gray-400">
-                    Michelle Huang <br/>
-                    <span class="text-gray-300">Head of Growth Marketing, Whop</span>
+                    Alex Rivera <br/>
+                    <span class="text-gray-300">Founder, TechStart</span>
                 </div>
             </div>
         </div>
